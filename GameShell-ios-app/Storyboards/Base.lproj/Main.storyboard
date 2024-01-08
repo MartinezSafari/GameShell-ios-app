@@ -27,6 +27,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Setting">
                                     <backgroundConfiguration key="background" image="greenImg.png"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2Ok-N3-zSI" kind="presentation" id="ALD-u5-bBo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpq-WB-bFI">
                                 <rect key="frame" x="572" y="217" width="77" height="35"/>
@@ -35,6 +38,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="About">
                                     <backgroundConfiguration key="background" image="greenImg.png"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="EPQ-qr-KuZ" kind="presentation" id="UJ6-6K-kcU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGF-GD-UJ4">
                                 <rect key="frame" x="570" y="303" width="78" height="35"/>
@@ -43,6 +49,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Games">
                                     <backgroundConfiguration key="background" image="greenImg.png"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="v0w-QH-d6a" kind="presentation" id="I9a-mR-Qbz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,48 +62,99 @@
             </objects>
             <point key="canvasLocation" x="47.226386806596707" y="-2.3999999999999999"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="png-D6-2An">
             <objects>
-                <viewController id="EPQ-qr-KuZ" sceneMemberID="viewController">
+                <viewController id="EPQ-qr-KuZ" customClass="AboutViewController" customModule="GameShell_ios_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="38R-j0-LkZ">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kYz-Q1-UkS">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <items>
+                                    <navigationItem title="About" id="kkp-QZ-z2Z">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ohh-5S-QcF">
+                                            <connections>
+                                                <segue destination="vmv-RU-rpb" kind="unwind" unwindAction="unwindToHomeViewConrollerWithSender:" id="Gkg-He-zJ6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ojG-cj-ToX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ss-Wc-gUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vmv-RU-rpb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="42" y="716"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="aB0-OC-9h3">
             <objects>
-                <viewController id="v0w-QH-d6a" sceneMemberID="viewController">
+                <viewController id="v0w-QH-d6a" customClass="GameViewController" customModule="GameShell_ios_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cgm-Pj-Xly">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-fd-OXe">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <items>
+                                    <navigationItem title="Let's Play" id="5At-E2-BCH">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Qir-FS-WQg">
+                                            <connections>
+                                                <segue destination="rcn-uJ-A5M" kind="unwind" unwindAction="unwindToHomeViewConrollerWithSender:" id="toA-GG-Wzm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wNp-Lt-6uj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7y-UM-kvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rcn-uJ-A5M" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="702" y="14"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="2Vb-o7-Vl1">
             <objects>
-                <viewController id="2Ok-N3-zSI" sceneMemberID="viewController">
+                <viewController id="2Ok-N3-zSI" customClass="SettingsViewController" customModule="GameShell_ios_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mal-0M-Nfb">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8p-Rl-aNx">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <items>
+                                    <navigationItem title="Settings" id="OkX-4v-FHt">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9hZ-wZ-YhZ">
+                                            <connections>
+                                                <segue destination="w1a-t5-hXm" kind="unwind" unwindAction="unwindToHomeViewConrollerWithSender:" id="nnq-HB-Ea5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QtF-jO-Yx6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bno-Fo-gQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="w1a-t5-hXm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="698" y="691"/>
         </scene>
@@ -104,6 +164,9 @@
         <image name="nitendoImg.png" width="1368" height="770"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
