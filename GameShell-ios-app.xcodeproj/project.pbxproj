@@ -13,6 +13,9 @@
 		9298EB652B4BF45700D16617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9298EB632B4BF45700D16617 /* Main.storyboard */; };
 		9298EB672B4BF45900D16617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9298EB662B4BF45900D16617 /* Assets.xcassets */; };
 		9298EB6A2B4BF45900D16617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9298EB682B4BF45900D16617 /* LaunchScreen.storyboard */; };
+		9298EB782B4C0AAB00D16617 /* nitendobg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9298EB752B4C0AAA00D16617 /* nitendobg.png */; };
+		9298EB792B4C0AAB00D16617 /* nitendoImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9298EB762B4C0AAA00D16617 /* nitendoImg.png */; };
+		9298EB7A2B4C0AAB00D16617 /* greenImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9298EB772B4C0AAB00D16617 /* greenImg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9298EB662B4BF45900D16617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9298EB692B4BF45900D16617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9298EB6B2B4BF45900D16617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9298EB752B4C0AAA00D16617 /* nitendobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nitendobg.png; sourceTree = "<group>"; };
+		9298EB762B4C0AAA00D16617 /* nitendoImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nitendoImg.png; sourceTree = "<group>"; };
+		9298EB772B4C0AAB00D16617 /* greenImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenImg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		9298EB5C2B4BF45700D16617 /* GameShell-ios-app */ = {
 			isa = PBXGroup;
 			children = (
-				9298EB5D2B4BF45700D16617 /* AppDelegate.swift */,
+				9298EB742B4C0A1700D16617 /* ViewControllers */,
+				9298EB732B4C09DC00D16617 /* Storyboards */,
+				9298EB722B4C09C900D16617 /* Images */,
+				9298EB712B4C09AF00D16617 /* Classes */,
 				9298EB5F2B4BF45700D16617 /* SceneDelegate.swift */,
-				9298EB612B4BF45700D16617 /* ViewController.swift */,
-				9298EB632B4BF45700D16617 /* Main.storyboard */,
-				9298EB662B4BF45900D16617 /* Assets.xcassets */,
-				9298EB682B4BF45900D16617 /* LaunchScreen.storyboard */,
 				9298EB6B2B4BF45900D16617 /* Info.plist */,
 			);
 			path = "GameShell-ios-app";
+			sourceTree = "<group>";
+		};
+		9298EB712B4C09AF00D16617 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9298EB5D2B4BF45700D16617 /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9298EB722B4C09C900D16617 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9298EB662B4BF45900D16617 /* Assets.xcassets */,
+				9298EB772B4C0AAB00D16617 /* greenImg.png */,
+				9298EB752B4C0AAA00D16617 /* nitendobg.png */,
+				9298EB762B4C0AAA00D16617 /* nitendoImg.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9298EB732B4C09DC00D16617 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9298EB682B4BF45900D16617 /* LaunchScreen.storyboard */,
+				9298EB632B4BF45700D16617 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9298EB742B4C0A1700D16617 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9298EB612B4BF45700D16617 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9298EB6A2B4BF45900D16617 /* LaunchScreen.storyboard in Resources */,
+				9298EB792B4C0AAB00D16617 /* nitendoImg.png in Resources */,
 				9298EB672B4BF45900D16617 /* Assets.xcassets in Resources */,
+				9298EB7A2B4C0AAB00D16617 /* greenImg.png in Resources */,
+				9298EB782B4C0AAB00D16617 /* nitendobg.png in Resources */,
 				9298EB652B4BF45700D16617 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +341,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,8 +367,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
