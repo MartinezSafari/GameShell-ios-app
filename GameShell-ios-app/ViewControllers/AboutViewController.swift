@@ -6,13 +6,19 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
 
+    @IBOutlet var wbPage : WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let urlAddress = URL(string: "https://www.nintendo.com/us/store/games/")
+        let url = URLRequest(url:urlAddress!)
+        wbPage?.load(url)
     }
     
 
